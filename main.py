@@ -34,7 +34,7 @@ songstatus.set("choosing")
 playlist=Listbox(root,selectmode=SINGLE,bg="DodgerBlue2",fg="white",font=('arial',15),width=40)
 playlist.grid(columnspan=5)
 
-os.chdir(r'C:\Users\BOSS\Desktop\MyPlaylist')
+os.chdir(r'C:\Users\DELL\Music')
 songs=os.listdir()
 for s in songs:
     playlist.insert(END,s)
