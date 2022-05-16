@@ -23,7 +23,7 @@ def resume():
     mixer.music.unpause()    
 
 root=Tk()
-root.title(' MP3 Music player')
+root.title('MP3 Music player')
 
 mixer.init()
 songstatus=StringVar()
@@ -39,22 +39,22 @@ songs=os.listdir()
 for s in songs:
     playlist.insert(END,s)
 
-#Button
+#button
 
-playbtn=Button(root,text="play",command=play)
-playbtn.config(font=('arial',20),bg="DodgerBlue2",fg="white",padx=7,pady=7)
-playbtn.grid(row=1,column=0)
+playbutton=Button(root,text="play",command=play)
+playbutton.config(font=('arial',20),bg="DodgerBlue2",fg="white",padx=7,pady=7)
+playbutton.grid(row=1,column=0)
 
-pausebtn=Button(root,text="Pause",command=pause)
-pausebtn.config(font=('arial',20),bg="DodgerBlue2",fg="white",padx=7,pady=7)
-pausebtn.grid(row=1,column=1)
+pausebutton=Button(root,text="Pause",command=pause)
+pausebutton.config(font=('arial',20),bg="DodgerBlue2",fg="white",padx=7,pady=7)
+pausebutton.grid(row=1,column=1)
 
-stopbtn=Button(root,text="Stop",command=stop)
-stopbtn.config(font=('arial',20),bg="DodgerBlue2",fg="white",padx=7,pady=7)
-stopbtn.grid(row=1,column=2)
+stopbutton=Button(root,text="Stop",command=stop)
+stopbutton.config(font=('arial',20),bg="DodgerBlue2",fg="white",padx=7,pady=7)
+stopbutton.grid(row=1,column=2)
 
-Resumebtn=Button(root,text="Resume",command=resume)
-Resumebtn.config(font=('arial',20),bg="DodgerBlue2",fg="white",padx=7,pady=7)
-Resumebtn.grid(row=1,column=3)
+Resumebutton=Button(root,text="Resume",command=resume)
+Resumebutton.config(font=('arial',20),bg="DodgerBlue2",fg="white",padx=7,pady=7)
+Resumebutton.grid(row=1,column=3)
 
 mainloop()
