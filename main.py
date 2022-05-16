@@ -50,7 +50,6 @@ pausebtn.config(font=('arial',20),bg="DodgerBlue2",fg="white",padx=7,pady=7)
 pausebtn.grid(row=1,column=1)
 
 stopbtn=Button(root,text="Stop",command=stop)
-)
 stopbtn.config(font=('arial',20),bg="DodgerBlue2",fg="white",padx=7,pady=7)
 stopbtn.grid(row=1,column=2)
 
